@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+</head>
+<body>
+    <a-assets>
+        <a-asset-item id="cube" src="./assets/08_cube_space/scene.gltf"></a-asset-item>
+        <a-asset-item id="lab_things" src="./assets/lab_things/scene.gltf"></a-asset-item>
+        <a-asset-item id="cartoon" src="./assets/pony_cartoon/scene.gltf"></a-asset-item>
+        <a-asset-item id="bench" src="./assets/wooden_bench/scene.gltf"></a-asset-item>
+    </a-assets>
+    
+    <a-scene>
+        <a-gltf-model src="#cube" scale="0.01 0.01 0.01" position='0 0 -10'></a-gltf-model>
+
+        <a-gltf-model src="#lab_things" scale="0.01 0.01 0.01" position='0 0 -3'></a-gltf-model>
+
+        <a-gltf-model src="#cartoon" scale="0.001 0.001 0.001" position='0 0 -5'></a-gltf-model>
+
+        <a-gltf-model src="#bench" scale="0.01 0.01 0.01" position='0 0 3'></a-gltf-model>
+        
+        <a-sky color="blue"></a-sky>
+        
+    </a-scene>
+    
+</body>
+</html>
