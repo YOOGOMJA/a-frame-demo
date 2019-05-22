@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+  </head>
+  <body>
+        <a-scene>
+            <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+            <a-assets>
+                <img id='floor_texture' src="./assets/bg.jpg" alt="">
+                <img id='wall_texture' src="./assets/bg2.jpg" alt="">
+                
+            </a-assets>
+
+            <a-assets>
+                <a-asset-item id="car" src="./wooden_bench/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <!-- <a-entity gltf-model="#car"></a-entity> -->
+
+        <!-- front wall -->
+        <a-plane src='#wall_texture'  position="0 2 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+        <a-plane src='#wall_texture'  position="0 6 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+
+        <a-plane src='#wall_texture'  position="4 2 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+        <a-plane src='#wall_texture'  position="4 6 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+
+        <a-plane src='#wall_texture'  position="8 2 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+        <a-plane src='#wall_texture'  position="8 6 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+
+        <a-plane src='#wall_texture'  position="-4 2 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+        <a-plane src='#wall_texture'  position="-4 6 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+
+        <a-plane src='#wall_texture'  position="-8 2 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+        <a-plane src='#wall_texture'  position="-8 6 -10" rotation="0 0 0" width="4" height="4"> </a-plane>
+
+        <!-- left side -->
+        <a-plane src='#wall_texture' position="-10 2 8" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 2 4" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 2 0" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 2 -4" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 2 -8" rotation="0 90 0" width="4" height="4" ></a-plane>
+
+        <a-plane src='#wall_texture' position="-10 6 8" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 6 4" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 6 0" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 6 -4" rotation="0 90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="-10 6 -8" rotation="0 90 0" width="4" height="4" ></a-plane>
+
+        <!-- right side  -->
+        <a-plane src='#wall_texture' position="10 2 8" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 2 4" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 2 0" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 2 -4" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 2 -8" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        
+        <a-plane src='#wall_texture' position="10 6 8" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 6 4" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 6 0" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 6 -4" rotation="0 -90 0" width="4" height="4" ></a-plane>
+        <a-plane src='#wall_texture' position="10 6 -8" rotation="0 -90 0" width="4" height="4" ></a-plane>
+
+        <!-- celling -->
+        <a-plane src='#floor_texture' position="0 8 4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 8 8" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 8 0" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 8 -4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 8 -8" rotation="90 0 0" width="4" height="4"></a-plane>
+
+        <a-plane src='#floor_texture' position="4 8 4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 8 8" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 8 0" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 8 -4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 8 -8" rotation="90 0 0" width="4" height="4"></a-plane>
+        
+        <a-plane src='#floor_texture' position="8 8 4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 8 8" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 8 0" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 8 -4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 8 -8" rotation="90 0 0" width="4" height="4"></a-plane>
+
+        <a-plane src='#floor_texture' position="-4 8 4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 8 8" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 8 0" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 8 -4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 8 -8" rotation="90 0 0" width="4" height="4"></a-plane>
+
+        <a-plane src='#floor_texture' position="-8 8 4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 8 8" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 8 0" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 8 -4" rotation="90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 8 -8" rotation="90 0 0" width="4" height="4"></a-plane>
+
+        <!-- floor -->
+        <a-plane src='#floor_texture' position="0 0 8" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 0 4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 0 0" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="0 0 -8" rotation="-90 0 0" width="4" height="4"></a-plane>
+
+        <a-plane src='#floor_texture' position="4 0 8" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 0 4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 0 0" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="4 0 -8" rotation="-90 0 0" width="4" height="4"></a-plane>
+
+        <a-plane src='#floor_texture' position="8 0 8" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 0 4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 0 0" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="8 0 -8" rotation="-90 0 0" width="4" height="4"></a-plane>
+
+
+        <a-plane src='#floor_texture' position="-4 0 8" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 0 4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 0 0" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-4 0 -8" rotation="-90 0 0" width="4" height="4"></a-plane>
+
+        <a-plane src='#floor_texture' position="-8 0 8" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 0 4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 0 0" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
+        <a-plane src='#floor_texture' position="-8 0 -8" rotation="-90 0 0" width="4" height="4"></a-plane>
+
+        <a-light color="white" position="0 0 10"></a-light>
+
+
+      <a-sky color="blue"></a-sky>
+    </a-scene>
+  </body>
+</html>
