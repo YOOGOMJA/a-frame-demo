@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/vr-demo' , (req,res,next)=>{
-  res.sendFile('/Users/kyeongsoo-yoo/00_DEV/03_Works/2019/masterpiece/99_reference/a-frame-1/views/modeling.html');
-});
+// router.get('/vr-demo' , (req,res,next)=>{
+//   res.sendFile('/Users/kyeongsoo-yoo/00_DEV/03_Works/2019/masterpiece/99_reference/a-frame-1/views/index.html');
+// });
 
 module.exports = router;
